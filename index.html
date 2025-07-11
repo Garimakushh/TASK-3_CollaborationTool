@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Collaboration</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 0; }
+    h1 { background: #333; color: white; padding: 10px; }
+    textarea {
+      width: 90%;
+      height: 70vh;
+      margin-top: 20px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Real-Time Collaborative Editor</h1>
+  <textarea id="editor" placeholder="Start typing..."></textarea>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
